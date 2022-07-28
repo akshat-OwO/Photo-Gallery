@@ -40,6 +40,29 @@
   text-align: center;
 }
 
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-preview{
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+.image-preview:hover{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+.image-preview h2{
+  font-size: 20px;
+  color: #58ADCC;
+  margin-bottom: 8px;
+}
+
 img{
-  width: 600px;
+  width: 325px;
 }
