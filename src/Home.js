@@ -9,6 +9,8 @@ const Home = () => {
         {title: 'Black and Teal Mountains', img: require('./images/mountain4.jpg'), author: 'mario', id: 4},
     ]);
 
+    const [name, setName] = useState('mario');
+
     const handleDelete = (id) =>{
         const newImages = images.filter(image => image.id !== id);
         setImages(newImages);
@@ -16,11 +18,13 @@ const Home = () => {
 
     useEffect(() =>{
         console.log('use effect ran');
-    });
+    }, [name]);
 
     return ( 
         <div className="home">
             <ImageList images={images} title={'Mountains'} handleDelete={ handleDelete }/>
+            <button onClick={() => setName('luigi')}>change name</button>
+            <p>{ name }</p>
         </div>
      );
 }
