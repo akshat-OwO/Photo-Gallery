@@ -12,7 +12,7 @@ const ImageList = (props) => {
                         <img src={ image.img } alt="" srcset="" />
                     </div>
                 )) }
-        `   </div>
+           </div>
         </div>
      );
 }
