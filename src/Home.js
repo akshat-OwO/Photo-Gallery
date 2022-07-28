@@ -7,12 +7,16 @@ const Home = () => {
         {title: 'Mountain Covered in Snow', img: require('./images/mountain2.jpg'), author: 'yoshi', id: 2},
         {title: 'Snow Top Mountains', img: require('./images/mountain3.jpg'), author: 'mario', id: 3},
         {title: 'Black and Teal Mountains', img: require('./images/mountain4.jpg'), author: 'mario', id: 4},
-    ])
+    ]);
+
+    const handleDelete = (id) =>{
+        const newImages = images.filter(image => image.id !== id);
+        setImages(newImages);
+    }
 
     return ( 
         <div className="home">
-            <ImageList images={images} title={'Mountains'}/>
-            <ImageList images={images.filter((image) => image.author === 'mario')} title={"Mario's Images"}/>
+            <ImageList images={images} title={'Mountains'} handleDelete={ handleDelete }/>
         </div>
      );
 }
