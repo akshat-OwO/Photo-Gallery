@@ -40,7 +40,7 @@
   text-align: center;
 }
 
-.home{
+.image-list{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -64,5 +64,6 @@
 }
 
 img{
-  width: 325px;
+  width: 300px;
+  height: 200px;
 }

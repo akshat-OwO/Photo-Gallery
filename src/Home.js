@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ImageList from './ImageList';
 
 const Home = () => {
     const [images, setImages] = useState([
@@ -10,12 +11,7 @@ const Home = () => {
 
     return ( 
         <div className="home">
-            { images.map((image) =>(
-                <div className="image-preview" key={image.id}>
-                    <h2>{ image.title }</h2>
-                    <img src={ image.img } alt="" srcset="" />
-                </div>
-            )) }
+            <ImageList images={images} title={'Mountains'}/>
         </div>
      );
 }
