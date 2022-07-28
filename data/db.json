@@ -2,25 +2,25 @@
     "images": [
         {
             "title": "Gray and Brown Mountains", 
-            "img": "require('../src/images/mountain1.jpg')", 
+            "img": "images/mountain1.jpg", 
             "author": "mario", 
             "id": 1
         },
         {
             "title": "Mountain Covered in Snow", 
-            "img": "require('../src/images/mountain2.jpg')", 
+            "img": "images/mountain2.jpg", 
             "author": "yoshi", 
             "id": 2
         },
         {
             "title": "Snow Top Mountains", 
-            "img": "require('../src/images/mountain3.jpg')", 
+            "img": "images/mountain3.jpg", 
             "author": "mario", 
             "id": 3
         },
         {
             "title": "Black and Teal Mountains", 
-            "img": "require('../src/images/mountain4.jpg')", 
+            "img": "images/mountain4.jpg", 
             "author": "mario", 
             "id": 4
         }
