@@ -12,6 +12,7 @@ const Home = () => {
     return ( 
         <div className="home">
             <ImageList images={images} title={'Mountains'}/>
+            <ImageList images={images.filter((image) => image.author === 'mario')} title={"Mario's Images"}/>
         </div>
      );
 }
