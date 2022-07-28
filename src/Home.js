@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ImageList from './ImageList';
 
 const Home = () => {
@@ -13,6 +13,10 @@ const Home = () => {
         const newImages = images.filter(image => image.id !== id);
         setImages(newImages);
     }
+
+    useEffect(() =>{
+        console.log('use effect ran');
+    });
 
     return ( 
         <div className="home">

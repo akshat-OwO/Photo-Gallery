@@ -10,7 +10,7 @@ const ImageList = (props) => {
                 { images.map((image) =>(
                     <div className="image-preview" key={image.id}>
                         <h2>{ image.title }</h2>
-                        <img src={ image.img } alt="" srcset="" />
+                        <img src={ image.img } alt="" />
                         <button onClick={() => handleDelete(image.id)}>Delete</button>
                     </div>
                 )) }
