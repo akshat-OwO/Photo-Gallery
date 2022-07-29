@@ -3,7 +3,7 @@ import useFetch from './useFetch';
 
 const Home = () => {
 
-    const { data: images, loading, error } = useFetch('http://localhost:8000/images');
+    const { data: images, loading, error } = useFetch('http://localhost:8000/mountains');
 
     return ( 
         <div className="home">

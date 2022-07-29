@@ -1,5 +1,5 @@
 {
-    "images": [
+    "mountains": [
         {
             "title": "Gray and Brown Mountains", 
             "img": "images/mountain1.jpg", 
@@ -21,6 +21,32 @@
         {
             "title": "Black and Teal Mountains", 
             "img": "images/mountain4.jpg", 
+            "author": "mario", 
+            "id": 4
+        }
+    ],
+    "rivers": [
+        {
+            "title": "Water Between Green Leaf Trees", 
+            "img": "images/river1.jpg", 
+            "author": "mario", 
+            "id": 1
+        },
+        {
+            "title": "Green Trees Surrounding Lake", 
+            "img": "images/river2.jpg", 
+            "author": "yoshi", 
+            "id": 2
+        },
+        {
+            "title": "Waterfalls in Forest", 
+            "img": "images/river3.jpg", 
+            "author": "mario", 
+            "id": 3
+        },
+        {
+            "title": "Bushes Near Pond", 
+            "img": "images/river4.jpg", 
             "author": "mario", 
             "id": 4
         }
