@@ -2,7 +2,8 @@ import Navbar from './Navbar';
 import Home from './Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Rivers from './Rivers';
-import ImageShowcase from './ImageShowcase';
+import MountShowcase from './MountShowcase';
+import RiverShowcase from './RiverShowcase';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
           <Routes>
             <Route exact path='/' element={<Home />} />
             <Route exact path='/rivers' element={<Rivers />} />
-            <Route exact path='/image:id' element={<ImageShowcase />} />
+            <Route exact path='/images/:id' element={<MountShowcase />} />
+            <Route exact path='/images/rivers/:id' element={<RiverShowcase />} />
           </Routes>
         </div>
       </div>
