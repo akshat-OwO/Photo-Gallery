@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Rivers from './Rivers';
 import MountShowcase from './MountShowcase';
 import RiverShowcase from './RiverShowcase';
+import NotFound from './NotFound';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route exact path='/rivers' element={<Rivers />} />
             <Route exact path='/images/:id' element={<MountShowcase />} />
             <Route exact path='/images/rivers/:id' element={<RiverShowcase />} />
+            <Route path='*' element={<NotFound />} />
           </Routes>
         </div>
       </div>
