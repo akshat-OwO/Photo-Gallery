@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import useFetch from './useFetch';
 
 const RiverShowcase = () => {
@@ -6,6 +6,16 @@ const RiverShowcase = () => {
     const { id } = useParams();
   
     const { data: image, loading, error } = useFetch('http://localhost:8000/rivers/' + id);
+
+    const navigate = useNavigate();
+
+    const handleDelete = () =>{
+        fetch('http://localhost:8000/rivers/' + id, {
+            method: 'DELETE'
+        }).then(() =>{
+            navigate('/rivers');
+        });
+    }
     
     return ( 
         <div className="image-showcase">
@@ -15,6 +25,7 @@ const RiverShowcase = () => {
                 <article>
                     <img src={ `/${image.img}` } alt="" />
                     <h2>{image.title}</h2>
+                    <button onClick={handleDelete}>Delete</button>
                 </article>
             )}
         </div>
